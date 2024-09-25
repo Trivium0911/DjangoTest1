@@ -9,3 +9,4 @@ def index(request):
         s += (bb.title + '\r\n' + bb.content + '\r\n' +
               str(bb.price) + '\r\n\r\n')
     return HttpResponse(s, content_type='text/plain; charset=utf-8-sig')
+
