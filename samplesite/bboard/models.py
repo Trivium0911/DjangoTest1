@@ -10,6 +10,7 @@ class Bd(models.Model):
 
     class Meta:
         verbose_name_plural = 'Объявления'
-
+        verbose_name = 'Обявление'
+        ordering = ['-published']
 
 
