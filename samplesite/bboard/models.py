@@ -10,7 +10,6 @@ class Bd(models.Model):
     rubric = models.ForeignKey('Rubric', null=True, on_delete=models.PROTECT,
                                verbose_name='Рубрика')
 
-
     class Meta:
         verbose_name_plural = 'Объявления'
         verbose_name = 'Обявление'
@@ -21,10 +20,8 @@ class Rubric(models.Model):
     name = models.CharField(max_length=30, db_index=True,
                             verbose_name='Название')
 
-
     def __str__(self):
         return self.name
-
 
     class Meta:
         verbose_name_plural = 'Рубрики'
